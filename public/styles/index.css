@@ -1,0 +1,134 @@
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    text-align: start;
+    overflow-x: hidden;
+    color: #212121;
+    z-index: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin-top: 10vh;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex-center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: #364f6b;
+    position: fixed;
+    top: 0;
+    padding: 1vw;
+    z-index: 1;
+}
+
+.sidebar {
+    width: 60vw;
+    min-height: 90vh;
+    position: sticky;
+    border-right: 1px solid #364f6b67;
+    padding: 3vw;
+    margin: 0
+}
+
+.config {   
+    padding: 3vw;
+    position: fixed;
+    width: 27vw;
+    left: 66vw;
+    top: 10vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1vw;
+}
+
+.card {
+    border: 1px solid #364f6b67;
+    padding: 0.5em;
+    word-spacing: 1em;
+}
+
+.button--acent {
+    background-color: #fc5185;
+}
+
+button {
+    border: none;
+    font-size: 1.2em;
+    padding: 0.3em;
+    background-color: #0e9097;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+
+input {
+    width: 70%;
+    font-size: 1.2em;
+    padding: 0.2em;
+    border: none;
+    background-color: #f0f0f0;
+    border: 2px solid #364f6b67;    
+}
+
+.header {
+    font-size: 2em;
+    color: #f1f1f1;
+}
+
+.subheader {
+    font-size: 1.3em;
+}
+
+.subheader--accent {
+    font-size: 1.3em;
+    color: #fc5185;
+}
+
+.margin-top {
+    margin-top: 3vh;
+}
+
+.full {
+    width: 100%;
+}
