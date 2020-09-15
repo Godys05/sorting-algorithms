@@ -89,8 +89,12 @@ nav {
     word-spacing: 1em;
 }
 
-.button--acent {
+.button-acent {
     background-color: #fc5185;
+}
+
+.button-acent--disabled {
+    background-color: #fc51844b;
 }
 
 button {
@@ -98,6 +102,16 @@ button {
     font-size: 1.2em;
     padding: 0.3em;
     background-color: #0e9097;
+    color: #f1f1f1;
+    border-radius: 10px;
+    outline: none;
+}
+
+.button--disabled {
+    border: none;
+    font-size: 1.2em;
+    padding: 0.3em;
+    background-color: #0e90975b;
     color: #f1f1f1;
     border-radius: 10px;
 }
@@ -108,7 +122,17 @@ input {
     padding: 0.2em;
     border: none;
     background-color: #f0f0f0;
-    border: 2px solid #364f6b67;    
+    border: 2px solid #364f6b67;   
+    border-radius: 10px;
+    outline: none;
+}
+
+.input--disabled {
+    width: 70%;
+    font-size: 1.2em;
+    padding: 0.2em;
+    border: none;
+    background-color: rgba(124, 123, 123, 0.116)
 }
 
 .header {
@@ -125,10 +149,28 @@ input {
     color: #fc5185;
 }
 
+.subheader-accent--disabled {
+    font-size: 1.3em;
+    color: #fc51844b;
+}
+
 .margin-top {
     margin-top: 3vh;
 }
 
 .full {
     width: 100%;
+}
+
+
+input:hover {
+    border: 2px solid #364f6bad;
+}
+
+button:hover {
+    background-color: #076e74;
+}
+
+.button-acent:hover {
+    background-color: #eb2d66;
 }
