@@ -18,66 +18,42 @@
 </head>
 <body>
     <div class="sidebar">
-        <div>
-            <p class="subheader">Bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
+        <div class="nav-link" value=0>
+            <p class="nav-text" value=0>Bubble sort</p>
         </div>
-        <div class="margin-top">
-            <p class="subheader">Modified bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
+        <div class="nav-link" value=1>
+            <p class="nav-text" value=1>Modified bubble sort</p>
         </div>
-        <div class="margin-top">
-            <p class="subheader">Modified bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
-        </div>
-        <div class="margin-top">
-            <p class="subheader">Modified bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
-        </div>
-        <div class="margin-top">
-            <p class="subheader">Modified bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
-        </div>
-        <div class="margin-top">
-            <p class="subheader">Modified bubble sort</p>
-            <div class="card flex-start">
-                <p>1 2 332 34 55</p>
-            </div>
-            <p>Time: 13 sec</p>
+        <div class="nav-link" value=2>
+            <p class="nav-text" value=2>Insertion sort</p>
+        </div>  
+        <div class="nav-link" value=3>
+            <p class="nav-text" value=3>Selection sort</p>
+        </div>  
+        <div class="nav-link" value=4>
+            <p class="nav-text" value=4>Quick sort</p>
+        </div>  
+        <div class="nav-link" value=5>
+            <p class="nav-text" value=5>Merge sort</p>
         </div>  
     </div>
 
     <div class="config">
         <div>
-            <p class="subheader--accent center">Your unsorted data</p>
-            <div class="card" hidden>
-                <p></p>
+            <p class="subheader--accent center" id="sortName">Bubble sort</p>
+            <div class="card" id="chart"></div>
+            <div class="flex-between margin-top">
+                <input type="number" id="input">
+                <button class="center setInput" id="setElementsButton">Set # of items</button>
             </div>
             <div class="flex-between margin-top">
-                <input type="text">
-                <button>Add</button>
+                <button class="center full button--disabled" disabled id="shuffleButton">Shuffle</button>
+                <button class="center full button-accent--disabled margin-from-sibling" name="begin" disabled id="beginButton">Begin</button>
             </div>
-            <button class="margin-top center full button-acent">Begin</button>
         </div>
     </div>
-
     
     <!--MAIN SCRIPT IMPORT-->
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="../main.js" type="module"></script>
 </body>
 </html>

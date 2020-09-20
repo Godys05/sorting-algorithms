@@ -58,42 +58,33 @@ nav {
 }
 
 .sidebar {
-    width: 60vw;
+    width: 30vw;
     min-height: 90vh;
     position: sticky;
     border-right: 1px solid #364f6b67;
     padding: 3vw;
+    padding-left: 0;
     margin: 0
 }
 
 .config {   
     padding: 3vw;
     position: fixed;
-    width: 27vw;
-    left: 66vw;
+    width: 57vw;
+    left: 36vw;
     top: 10vh;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3vh;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1vw;
 }
 
 .card {
     border: 1px solid #364f6b67;
-    padding: 0.5em;
-    word-spacing: 1em;
+    display: none;
 }
 
-.button-acent {
+.button-accent {
     background-color: #fc5185;
 }
 
-.button-acent--disabled {
+.button-accent--disabled {
     background-color: #fc51844b;
 }
 
@@ -116,8 +107,19 @@ button {
     border-radius: 10px;
 }
 
+.button--disabled:hover {
+    border: none;
+    font-size: 1.2em;
+    padding: 0.3em;
+    background-color: #0e90975b;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+
+
 input {
-    width: 70%;
+    max-width: 85%;
+    min-width: 60%;
     font-size: 1.2em;
     padding: 0.2em;
     border: none;
@@ -158,19 +160,57 @@ input {
     margin-top: 3vh;
 }
 
+.margin-from-sibling {
+    margin-left: 2vh;
+}
+
 .full {
     width: 100%;
 }
 
 
-input:hover {
-    border: 2px solid #364f6bad;
-}
-
 button:hover {
     background-color: #076e74;
 }
 
-.button-acent:hover {
+.button-accent:hover {
     background-color: #eb2d66;
+}
+.button-accent--disabled:hover {
+    background-color: #fc51844b;
+}
+
+.nav-link {
+    padding: 5vh;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link p {
+    width: fit-content;
+}
+
+.nav-link:hover {
+    background-color: #364f6b;
+    padding-left: 6vh;
+    cursor: pointer;
+}
+
+.nav-link:hover p {
+    color: #f1f1f1;
+}
+
+.nav-link--disabled {
+    background-color: #dee8f336;
+    padding: 5vh;
+    width: 100%;
+}
+
+.nav-link--disabled p {
+    color: #21212142;
+}
+.chart {
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
 }
